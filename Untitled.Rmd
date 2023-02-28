@@ -2,12 +2,12 @@
 title: "Project2"
 author: "waheeb Algabri"
 output:
+  pdf_document: default
   html_document:
     highlight: pygments
     theme: cerulean
     toc: true
     toc_float: true
-  pdf_document: default
 editor_options: 
   chunk_output_type: console
 ---
@@ -23,7 +23,7 @@ knitr:: include_graphics("player.png")
 ```
 
 
-# untidy data posted by mohammed ramadan in discuttion 5 
+# untidy data posted by mohammed ramadan in discussion 5 
 
 One example of an untidy dataset is a table of NBA player statistics that is taken from an HTML page. The table is in "wide" format, where each row represents a player, and each column represents a statistic. 
 
@@ -124,7 +124,7 @@ I compared the performance of different players based on their statistics, speci
 
 *** 
 
-# Untidy data posted by Coco Donovan in discution 5
+# Untidy data posted by Coco Donovan in discussion 5
 
 sources: 
 [untidy data ](  https://towardsdatascience.com/whats-tidy-data-how-to-organize-messy-datasets-in-python-with-melt-and-pivotable-functions-5d52daa996c9 )
@@ -177,7 +177,7 @@ coco_new <- select(coco, -id)
 knitr::kable(coco_new)
 ```
 
-Convert the data from wide format to long format using
+##### Convert the data from wide format to long format using
 
 ```{r}
 coco_tidy <- coco_new %>%
@@ -246,7 +246,7 @@ ggplot(data_summary, aes(x = religion, y = percent, fill = income_level)) +
 
 *** 
 
-# Untidy data posted by Farhana Akther in disscution 5
+# Untidy data posted by Farhana Akther in discussion 5
 
 ```{r}
 knitr:: include_graphics("Farhana.png")
@@ -293,7 +293,7 @@ library(dplyr)
 ```
 
 
-Convert the data from wide to long format
+##### Convert the data from wide to long format
 
 ```{r}
 election_data <-Farhana %>%
@@ -306,6 +306,9 @@ election_data <-Farhana %>%
 knitr::kable(election_data)
 ```
 
+
+##### Analysis
+ 
  Calculate the total votes for each candidate
  
 ```{r}
